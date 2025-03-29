@@ -21,8 +21,8 @@ class Book(models.Model):
     contributors = models.ManyToManyField('Contributor',
                                           through="BookContributor")
 
-    def __str__(self):
-        return self.title
+    def __str__(self): #used to display
+        return self.title # so that it returns the title when viewed in the admin.
 
     @staticmethod
     def get_default_publisher():
