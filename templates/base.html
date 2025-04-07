@@ -19,14 +19,15 @@
       .navbar-brand {
         font-size: 25px;
       }
+
       .navbar-brand > img {
          height: 60px;
-      }
+       }
     </style>
   </head>
   <body>
         <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
-          <a class="navbar-brand" href="/">Book Review</a>
+          <a class="navbar-brand" href="/">{% block brand %}Book Review{% endblock %}</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -48,5 +49,14 @@
          {% block content %}
         <h1>Welcome to Bookr!</h1>
         {% endblock %}
+  <!-- Copyright -->
+  <footer class="page-footer font-small blue">
+    <div class="footer-copyright text-center py-3">&copy; 2022 Copyright:
+      <a href="https://www.packtpub.com"> Packt Publications</a>
+      <p>Website by: Packt Publications</p>
+      <p>Contact information: <a href="mailto:email@example.com">email@example.com</a></p>
+    </div>
+  </footer>
+  <!-- Copyright -->
   </body>
 </html>
